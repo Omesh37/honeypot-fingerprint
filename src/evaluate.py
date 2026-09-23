@@ -3,8 +3,8 @@ from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bo
 from sklearn.preprocessing import StandardScaler
 
 # Input paths
-fused_file = '/home/omesh/honeypot-fingerprint/data/processed/fused.csv'
-labels_file = '/home/omesh/honeypot-fingerprint/models/cluster_labels.csv'
+fused_file = './data/processed/fused.csv'
+labels_file = './models/cluster_labels.csv'
 
 # Load data
 df = pd.read_csv(fused_file)

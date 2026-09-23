@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Input and output paths
-timing_file = '/home/omesh/honeypot-fingerprint/data/processed/timing_only.csv'
-ttp_file = '/home/omesh/honeypot-fingerprint/data/processed/ttp_only.csv'
-output_file = '/home/omesh/honeypot-fingerprint/data/processed/fused.csv'
+timing_file = './data/processed/timing_only.csv'
+ttp_file = './data/processed/ttp_only.csv'
+output_file = './data/processed/fused.csv'
 
 # Load both datasets
 timing_df = pd.read_csv(timing_file)

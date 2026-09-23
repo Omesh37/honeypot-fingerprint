@@ -4,8 +4,8 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Input and output paths
-input_file = '/home/omesh/honeypot-fingerprint/data/processed/fused.csv'
-output_model = '/home/omesh/honeypot-fingerprint/models/cluster_labels.csv'
+input_file = './data/processed/fused.csv'
+output_model = './models/cluster_labels.csv'
 
 # Load fused dataset
 df = pd.read_csv(input_file)
@@ -34,5 +34,5 @@ plt.scatter(X[:,0], X[:,1], c=labels, cmap='rainbow')
 plt.title("Attacker Clusters")
 plt.xlabel("Command Length (scaled)")
 plt.ylabel("Paste Indicator (scaled)")
-plt.savefig('/home/omesh/honeypot-fingerprint/models/cluster_plot.png')
+plt.savefig('./models/cluster_plot.png')
 print("Cluster plot saved to models/cluster_plot.png")

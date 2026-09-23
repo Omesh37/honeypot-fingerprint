@@ -3,8 +3,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 # Input paths
-fused_file = '/home/omesh/honeypot-fingerprint/data/processed/fused.csv'
-labels_file = '/home/omesh/honeypot-fingerprint/models/cluster_labels.csv'
+fused_file = './data/processed/fused.csv'
+labels_file = './models/cluster_labels.csv'
 
 # Load data
 df = pd.read_csv(fused_file)

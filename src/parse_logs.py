@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 input_file = '/home/omesh/cowrie-proto/cowrie-logs/cowrie.json'
-output_file = '/home/omesh/honeypot-fingerprint/data/processed/sessions.csv'
+output_file = './data/processed/sessions.csv'
 
 data = []
 with open(input_file, 'r') as f:

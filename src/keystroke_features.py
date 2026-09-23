@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # Input and output paths
-input_file = '/home/omesh/honeypot-fingerprint/data/processed/sessions.csv'
-output_file = '/home/omesh/honeypot-fingerprint/data/processed/timing_only.csv'
+input_file = './data/processed/sessions.csv'
+output_file = './data/processed/timing_only.csv'
 
 # Load parsed sessions
 df = pd.read_csv(input_file)

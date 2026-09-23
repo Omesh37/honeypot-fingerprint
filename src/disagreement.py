@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Input paths
-timing_file = '/home/omesh/honeypot-fingerprint/data/processed/timing_only.csv'
-ttp_file = '/home/omesh/honeypot-fingerprint/data/processed/ttp_only.csv'
+timing_file = './data/processed/timing_only.csv'
+ttp_file = './data/processed/ttp_only.csv'
 
 # Load datasets
 timing_df = pd.read_csv(timing_file)
@@ -22,7 +22,7 @@ def detect_disagreement(row):
 merged['disagreement'] = merged.apply(detect_disagreement, axis=1)
 
 # Save disagreements
-output_file = '/home/omesh/honeypot-fingerprint/data/processed/disagreements.csv'
+output_file = './data/processed/disagreements.csv'
 merged[merged['disagreement']].to_csv(output_file, index=False)
 
 print(f"Saved disagreement cases to {output_file}")
